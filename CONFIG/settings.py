@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'MarineProtectionWebsite.urls'
+ROOT_URLCONF = 'CONFIG.urls'
 
 TEMPLATES = [
     {
@@ -70,13 +70,13 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'MarineProtectionWebsite.global_vars.global_variables',  # 加入全局html可用的變數
+                'CONFIG.global_vars.global_variables',  # 加入全局html可用的變數
             ],
         },
     },
 ]
 
-WSGI_APPLICATION = 'MarineProtectionWebsite.wsgi.application'
+WSGI_APPLICATION = 'CONFIG.wsgi.application'
 
 # 若需要改用ASGI的話
 # ASGI_APPLICATION = "ANANews.asgi.application"
