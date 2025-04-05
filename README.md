@@ -1,2 +1,2 @@
 # MarineProtectionWebsite
-學校專案：海洋保護宣傳網站
+學校作品：海洋保護宣傳網站
