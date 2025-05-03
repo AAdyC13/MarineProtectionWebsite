@@ -44,7 +44,10 @@ INSTALLED_APPS = [
     # 'corsheaders', #跨域資源共享
 
     # APP
+
     # 其他核心
+    'index',
+    'CORE',
 ]
 
 MIDDLEWARE = [
