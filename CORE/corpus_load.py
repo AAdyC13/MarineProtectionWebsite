@@ -13,7 +13,7 @@ base_path = "C:\\Users\\AAdy\\Desktop\\開發環境\\海洋保護宣傳網站\\�
 
 def corpus_load_in():
     print(f"ℹ️ 開始載入語料庫")
-    loaded_corpus: list = get_loaded_corpus()["loaded_corpus"]
+    loaded_corpus: list = get_loaded_corpus().keys()
     new_corpus: list = [i for i in os.listdir(
         base_path) if i not in loaded_corpus]
 
@@ -27,6 +27,10 @@ def corpus_load_in():
 
         with open(f"{inner_path}\\url_list_final.txt", 'r', encoding='utf-8', errors='ignore') as f:
             url_list_final = f.read().split("\n")
+
+        with open(f"{inner_path}\\seeds.txt", 'r', encoding='utf-8', errors='ignore') as f:
+            seed = [line.strip()
+                    for line in f.read().split("\n") if line.strip()]
 
         file_list = os.listdir(f"{inner_path}\\download")
         counter = -1
@@ -68,14 +72,16 @@ def corpus_load_in():
             else:
                 print(f'🔴 非可寫入：{filename}')
 
-        add_loaded_corpus(corpus)
+        add_loaded_corpus(corpus, seed)
+        print(f"ℹ️ 種子： {seed}")
         print(f"ℹ️ 語料庫 {corpus} 載入完畢")
+
     print(f"ℹ️ 語料庫載入完畢")
 
 
 def corpus_del(name):
     del_loaded_corpus(name)
-    print(f"⚠️ 已刪除 {name} 語料庫的讀取紀錄(其內容沒有被刪除)")
 
 
+# corpus_del("yz_zh_01")
 corpus_load_in()
