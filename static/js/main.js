@@ -64,3 +64,12 @@ $('.smoothscroll').on('click', function (e) {
 
 });
 
+//-----------------------------------------------------------------
+// 按鈕往下滾動
+//------------------------------------------------------
+function smoothScrollTo(targetId) {
+    const element = document.getElementById(targetId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
