@@ -1,2 +1,2 @@
 # MarineProtectionWebsite
-學校作品：海洋保護宣傳網站
+Collage class work: python Django project - 海洋保護宣傳網站
