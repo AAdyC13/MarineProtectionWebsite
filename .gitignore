@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 keys.json
 海洋物種保護.pdf
-static\media\underwater.mp4
+static/media/underwater.mp4
 # C extensions
 *.so
 
