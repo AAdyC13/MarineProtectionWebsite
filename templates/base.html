@@ -32,8 +32,9 @@
         data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button> -->
-      <a class="navbar-brand" href="#">
-        <img class="logo" src="{% static 'img/logo.png' %}" alt="" />
+      <a class="navbar-brand" href="javascript:;" style="pointer-events: none; ">
+        <img class="logo" src="{% static 'img/logo.png' %}" alt="" style="max-width: 70pt; height: auto;" />
+        <small class="logo-text">　Marine Protection Website</small>
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
@@ -41,16 +42,22 @@
             <a class="nav-link smoothscroll" href="#home">頁首</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link smoothscroll" href="#main">文章分析與結論整理</a>
+            <a class="nav-link smoothscroll" href="#analyze">海洋保護語料分析</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link smoothscroll" href="#gallery">海洋保護小講堂</a>
+            <a class="nav-link smoothscroll" href="#japan">日本の海洋永続</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link smoothscroll" href="#about">海洋保護工藝品展示</a>
+            <a class="nav-link smoothscroll" href="#ai">海洋保護小講堂</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/admin/" target="_blank">後台</a>
+            <a class="nav-link smoothscroll" href="#art">SDGs14|美術展覽</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smoothscroll" href="#gallery">文創小物</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer-end">頁末</a>
           </li>
         </ul>
       </div>
@@ -71,7 +78,7 @@
             C110190116 楊欣芸<br>
             C110134217 鄭宇哲
           </p>
-          <button onclick="smoothScrollTo('main')" class="btn btn-header">
+          <button onclick="smoothScrollTo('analyze')" class="btn btn-header">
             開始閱讀
           </button>
         </div>
@@ -87,79 +94,107 @@
 
   <!-- base_appsContent_open -->
   {% block apps_content %}{% endblock %}
-  <!-- base_appsContent_end -->
 
-  <!-- base_footerSec_open -->
+
+
   <section id="footer">
     <div class="container-fluid">
       <div class="row">
+        <div class="col-md-4 col-sm-10 mx-auto mb-5">
+          <h4>工作分配</h4>
+          <hr>
+          <p>B112134308 余珮翎<br>日文語料庫匯集、網頁文本撰寫、<br><br>
+            C110190116 楊欣芸<br>中文語料庫匯集、美術文創資源製作、<br><br>
+            C110134217 鄭宇哲<br>中文語料庫匯集、網頁文本撰寫、網站架設、前端設計、</p>
+
+        </div>
         <div class="col-md-3 col-sm-10 mx-auto mb-5">
-          <h4>Our Services</h4>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Similique, ducimus, hic! Itaque aliquam inventore nobis magni
-            error enim quod, temporibus.
-          </p>
-          <button class="btn btn-footer">Read more</button>
-        </div>
-        <div class="col-md-2 col-sm-10 mx-auto mb-5">
-          <h4>Quick Links</h4>
-          <hr />
+          <h4>網站貢獻</h4>
+          <hr>
           <ul class="footer-list">
-            <li class="footer-item"><a href="javascript:;">Home</a></li>
-            <li class="footer-item"><a href="javascript:;">Places</a></li>
-            <li class="footer-item"><a href="javascript:;">Gallery</a></li>
-            <li class="footer-item"><a href="javascript:;">About Us</a></li>
-            <li class="footer-item"><a href="javascript:;">Contact Us</a></li>
-            <li class="footer-item">
-              <a href="javascript:;">Privacy Policy</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-2 col-sm-10 mx-auto mb-5">
-          <h4>Follow Us</h4>
-          <hr />
-          <ul class="footer-list-social">
-            <li class="icon social fb"><i class="fa fa-facebook"></i></li>
-            <li class="icon social tw"><i class="fa fa-twitter"></i></li>
-            <li class="icon social in"><i class="fa fa-linkedin"></i></li>
+            <li class="footer-item"><a href="#home">頁首</a>（宇哲）</li>
+            <li class="footer-item"><a href="#analyze">海洋保護語料分析</a>（宇哲）</li>
+            <li class="footer-item"><a href="#japan">日本の海洋永続</a>（珮翎）</li>
+            <li class="footer-item"><a href="#ai">海洋保護小講堂</a>（宇哲）</li>
+            <li class="footer-item"><a href="#art">SDGs14|美術展覽</a>（欣芸）</li>
+            <li class="footer-item"><a href="#gallery">文創小物</a>（欣芸）</li>
+            <li class="footer-item"><a href="/admin/" target="_blank">網站後端</a>（宇哲）</li>
           </ul>
         </div>
         <div class="col-md-5">
-          <h4>Subscribe Today</h4>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Provident illum eveniet architecto, magnam facilis soluta eos
-            officiis commodi iure. Asperiores?
-          </p>
-          <div class="subscribe">
-            <form action="#" class="mt-4">
-              <div class="input-group">
-                <input class="btn" name="email" id="email" type="email" placeholder="Your Email" required />
-                <button class="btn btn-grey" type="submit">
-                  <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                </button>
-              </div>
-            </form>
-          </div>
+          <h4>參考資料</h4>
+          <hr>
+          <ul>
+            <li>
+              <a href="#analyze_source">
+                海洋保護語料分析 (多個來源)
+              </a>
+            </li>
+            <li>
+              <a href="https://www.mofa.go.jp/mofaj/files/000101402.pdf" target="_blank">
+                我々の世界を変革する：持続可能な開発のための2030アジェンダ
+              </a>
+            </li>
+            <li>
+              <a href="https://sdgs.edutown.jp/info/goals/goals-14.html" target="_blank">
+                海の豊かさを守ろう
+              </a>
+            </li>
+            <li>
+              <a href="https://chatgpt.com/" target="_blank">
+                ChatGPT
+              </a>
+            </li>
+            <li>
+              <a href="https://platform.openai.com/" target="_blank">
+                OpenAI API (雲端LLM提供商)
+              </a>
+            </li>
+            <li>
+              <a href="https://youtu.be/HK_A0QrxoGA?si=d9oDomHA3lSkXMzp" target="_blank">
+                動態背景資源
+              </a>
+            </li>
+            <li>
+              本網站已經過大範圍改造，原始模板來自：
+              <a target="_blank" href="http://www.mobanwang.com/" title="模板王">模板王</a>
+              </a>
+            </li>
+            <li>
+              <a target="_blank"
+                href="https://docs.google.com/document/d/12PY2Z6R2RflJbBVbvQ2_EpswMV6H6GCjYcvYR0Gj0lo/edit?usp=sharing"
+                title="模板王">📄此處前往本組-期末報告書</a>
+              </a>
+            </li>
+            <li>
+              <a target="_blank"
+                href="https://www.canva.com/design/DAGpr3R9RiA/isMupYdiuclHYwYruAiBpg/edit?utm_content=DAGpr3R9RiA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                title="模板王">📊此處前往本組-期末PPT簡報</a>
+              </a>
+            </li>
+            <li>
+              <a  href="javascript:void(0);" title="模板王">🎥此處前往本組-期末影片</a>
+              </a>
+              <!-- target="_blank" -->
+            </li>
+          </ul>
+
         </div>
       </div>
     </div>
   </section>
-  <!-- base_footerSec_end -->
 
-  <!-- base_footer-open -->
   <section id="footer-end">
     <div class="container">
       <p>
-        &copy; 2018 Company name. All rights Reserved. |
-        <a target="_blank" href="http://www.mobanwang.com/" title="模板王">模板王</a>
+        113-2 AI數位人文導論課堂作品-第三組　
+        本網站僅供課堂內學術研究使用，無任何商業用途
+
       </p>
     </div>
+
   </section>
-  <!-- base_footer-end -->
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -169,6 +204,7 @@
 
   <!-- main js -->
   <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/ai.js' %}"></script>
 </body>
 
 </html>

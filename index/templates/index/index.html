@@ -1,410 +1,567 @@
 {% extends "base.html" %} {% load static %} {% block apps_content %}
+<section id="analyze">
+  <div class="container">
+    <div class="main-header">
+      <h2 class="display-4 mb-3">海洋保護語料分析</h2>
+      <p>文章來源：整合以xml格式解析之語料庫，由AI分析生成</p>
+    </div>
+    <div class="main-text">
+      <h3>主題一、海洋物種保護</h3>
+      <p>
+        在 SDG14 目標指引下，臺灣政府多管齊下保護海洋生物多樣性。首先，在法規上早已將多種關鍵物種列為保育
+        對象。例如，行政院農委會早於1989年（民國78年）依《野生動物保育法》公告將所有海龜列為保育類瀕危野
+        生動物，嚴禁捕捉、獵殺、交易等<sup class="text-muted">1</sup>；澎湖縣政府也在1996年公告望安島為綠蠵龜產卵棲地保護區，每年5月
+        至10月實施夜間管制，確保海龜安心產卵<sup class="text-muted">1</sup>。近年通過的《海洋保育法》（2024年7月三讀通過）更授權主管
+        機關劃設海洋保護區核心區，禁止任何人員與水陸交通工具進入，違者可處新台幣50萬元以下罰鍰<sup class="text-muted">2</sup>，以加
+        強棲地保護。
+      </p>
+      <p>
+        在具體行動方面，行政院海洋委員會海洋保育署與地方政府、民間組織合作推動多項計畫。海洋保育署從2019
+        年起啟動全國鯨豚族群調查，並於2024年公告「鯨豚保育計畫」，針對海域航行噪音、糾網致死等威脅擬定減
+        緩對策，整合各部會能量共同維護鯨豚棲地<sup class="text-muted">3</sup>。地方案例如綠島漁業資源保育區，2024年海保署資助夜間岸
+        際巡護288人次，杜絕電擊或爆破等非法漁法，期望減少違規事件、促進珊瑚礁及魚類資源復育<sup class="text-muted">4</sup>。行政院永
+        續報告指出，臺灣到2022年底已建立69處海洋保護區（含濕地），並協助9個縣市與4個民間團體強化22個保護
+        區及8個生態熱點的調查、巡守及復育措施<sup class="text-muted">5</sup>。同時，海洋保育署與地方合作展開鯨豚與珊瑚等生態監測：例
+        如屏東七美漁業資源保育區於2023年建立標準化珊瑚生態調查，培養在地巡守能力並推動分區管理<sup class="text-muted">5</sup>。
+      </p>
+      <p>
+        對特殊物種的保護也廣泛施行。以臺灣特有種「石斑龍王鯛」（俗稱曲紋唇魚）為例，《野保法》已將其列為
+        保育類野生動物，禁止獵捕<sup class="text-muted">6</sup>。臺東縣政府農業處明文指出，違反法規獵捕該物種，將依《野保法》處六月
+        以上有期徒刑及30萬以上罰金<sup class="text-muted">6</sup>。不過，實務上仍時有盜獵事件發生，如2016年綠島盜獵龍王鯛和2021年蘭
+        嶼捕獲案，引發民間批評執法力度不足。白海豚保育計畫下，政府透過「賞鯨獎勵金」制度鼓勵漁民通報目
+        擊，並培訓漁民及在地民眾擔任觀測志工與解說員，協助記錄棲息資訊、增進地方保育意識<sup class="text-muted">5</sup>。此外，在遠
+        洋漁業方面，漁業署配合國際組織要求增設漁船監控系統（VMS）與觀察員制度，100％蓋網圍漁船配備觀察
+        員，並強化對混獲海龜之管制。美國海洋暨大氣管理局（NOAA）2023年報告即肯定我國全面調查IUU漁捕案件
+        並懲處違規漁船，並指出我國已修改鮪釣船赴大西洋作業法規以減少海龜混獲，對我國打擊非法漁撈和海龜保
+        育措施均予「正面認定」<sup class="text-muted">7</sup>。綜合來看，臺灣透過立法保護、保育區劃設、在地巡護與跨部會整合等手段，
+        加強對海洋物種和棲地的保育；但仍需繼續克服跨域協調與執法人力不足等挑戰，以落實生物多樣性永續。
+      </p>
+    </div>
+    <div class="main-text">
+      <h3>主題二、海洋垃圾遏止與回收</h3>
+      <p>
+        面對海洋塑膠污染問題，臺灣政府推動多項污染防治策略並逐步落實。行政院永續報告強調各部會聯手防止垃
+        圾入海：環保署編列預算支持國際海岸清潔行動（ICC），自2019年起在19個沿海縣市定期調查並清理海岸廢
+        棄物。ICC調查結果顯示，2019年共清除14,870件海岸垃圾（以塑膠袋、保麗龍等生活廢棄物為主），到2023
+        年已減少到4,323件<sup class="text-muted">8</sup>。同期間，限塑政策上路後「生活遊憩類垃圾」比例由86.1%降至81.4%，顯示塑膠減
+        量對減輕海岸垃圾負擔有所貢獻<sup class="text-muted">8</sup>。資源回收方面，中央亦要求各縣市統計漁（商）港每季回收量，並協助
+        地方政府推動資源回收工作，目標年度回收率達59.2%以上<sup class="text-muted">9</sup>。海洋委員會和環保署每年編列淨灘經費，在全
+        臺19個臨海縣市支持地方辦理沙灘清理與認養活動（約新台幣350萬元/年）<sup class="text-muted">10</sup>，並輔導漁港設置「海漂垃圾
+        暫置區」，鼓勵漁民將撈起的廢棄漁網具、保麗龍等就近丟棄處理<sup class="text-muted">11</sup>。經過這些措施，民間志工與公私協力
+        的淨灘活動有助於減少可見垃圾。
+      </p>
+      <p>
+        源頭減量是關鍵：環保署持續擴大塑膠產品管制範圍，自2002年起即以減少垃圾量為目標推動限塑政策<sup class="text-muted">12</sup>。
+        2022年底環保署報告指出，購物用塑膠袋限用措施實施後，與2020年（109年）相比，年用量減少約108億個<sup class="text-muted">12</sup>
+        ；不過由於小型市場和夜市攤販尚未全面納入管制，購物用塑膠袋的總使用量仍有超過五成屬於管制外源
+        頭<sup class="text-muted">12</sup>。2023年元旦起，政府開始實施「循環杯」政策，要求便利商店及連鎖速食店至少5%的門市提供可重複
+        使用飲料杯租借服務<sup class="text-muted">13</sup>；同年8月起，校園、百貨、量販、商超等場所禁用PLA材質的一次性免洗餐具<sup class="text-muted">13</sup>。
+        未來還將禁用含PVC之網購包材等。這些政策推動下，綠色和平等團體觀察到臺灣進入「循環杯元年」，並帶動連鎖業者投入循環使用模式<sup
+          class="text-muted">13</sup>。此外，企業與社區也參與其中：部分廠商開始將回收的廢棄物轉製為衣物
+        和包袋<sup class="text-muted">11</sup>，旅遊業者和影視活動陸續提供循環餐具，公私部門合作提升資源回收率。
+      </p>
+      <p>
+        然而，要減少海洋垃圾仍面臨挑戰。由於洋流影響，跨國漂流垃圾問題尤為嚴峻。國立臺灣海洋大學2025年研
+        究發現，基隆海域常出現「垃圾廊帶」，西南沿岸洋流夾帶自中國浙江來台的廢棄物，是臺灣西海岸主要污染
+        源<sup class="text-muted">14</sup>。環境團體指出，解決海廢必須重視源頭減量與國際合作，建議政府與鄰近國家推動垃圾來源管理，減
+        少漂洋垃圾輸入<sup class="text-muted">15</sup>。此外，本土部門也須持續加強監管，例如加大對非法丟棄的取締力度、完善漁具回收獎
+        勵制度。黑潮海洋文教基金會等 NGO 指出，約有八成海洋廢棄物來自陸地（如不當丟棄與垃圾掩埋場滲漏）<sup class="text-muted">16</sup>
+        ，顯示提升民眾環保意識與生活減塑並行的重要性。總的來看，臺灣已經建立了從政策法規到巡護執行、
+        從回收機制到民間參與的多層面體系，但要達成SDG14下「淨海」目標，仍需跨部會長期協調、國際合作與全
+        民共識的持續推動。
+      </p>
+    </div>
+    <div id="analyze_source">
+      <h3>AI著重引用之語料出處</h3>
 
-  <!-- section main -->
-  <section id="main">
-    <div class="container">
-      <div class="main-header">
-        <h2 class="display-4 mb-3">Places to Explorer</h2>
+      <ul>
+        <li>1.　<a href="https://www.fa.gov.tw/view.php?theme=World_ocean_day&subtheme=&id=15">三、臺灣海洋保護區相關成果(農業部漁業署)</a>
+        </li>
+        <li>2.　<a
+            href="https://www.greenpeace.org/taiwan/update/35872/%E3%80%8A%E6%B5%B7%E6%B4%8B%E4%BF%9D%E8%82%B2%E6%B3%95%E3%80%8B%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E3%80%8A%E6%B5%B7%E4%BF%9D%E6%B3%95%E3%80%8B5%E5%A4%A7%E9%87%8D%E9%BB%9E%EF%BC%8C%E5%8A%9B%E4%BF%83/">《海洋保育法》三讀通過，為臺灣海洋張開防護網！
+            - Greenpeace綠色和平 | 臺灣 </a>
+        </li>
+        <li>3.　<a
+            href="https://www.oca.gov.tw/ch/home.jsp?id=14&parentpath=0,2&mcustomize=news_view.jsp&dataserno=202402170001">新聞快訊-強化鯨豚保護行動
+            海保署公告鯨豚保育計畫-海洋委員會海洋保育署全球資訊網</a>
+        </li>
+        <li>4.　<a
+            href="https://www.oca.gov.tw/ch/home.jsp?id=618&parentpath=0,299&mcustomize=research_view.jsp&dataserno=202501240011">補捐/助計畫成果-113年臺東縣綠島漁業資源保育區巡護計畫-海洋委員會海洋保育署全球資訊網</a>
+        </li>
+        <li>5 | 8.　<a href="https://ncsd.ndc.gov.tw/Fore/SDG14">SDG14-行政院國家永續發展委員會</a>
+        </li>
+        <li>6.　<a href="https://www.thenewslens.com/article/147278">全台剩不到30尾！保育類「龍王鯛」再添一死，蘭嶼2鄉民捕獲拍照炫耀-TNL The News Lens
+            關鍵評論網</a>
+        </li>
+        <li>7.　<a
+            href="https://www.fa.gov.tw/view.php?theme=Press_release&subtheme=&id=1957">我國打擊IUU漁捕獲美國正面認定，遠洋漁船強迫勞動持續引關注(農業部漁業署)</a>
+        </li>
+
+        <li>9 | 10.　<a
+            href="https://www.oca.gov.tw/userfiles/A47020000A/files/%E8%87%BA%E7%81%A3%E6%B5%B7%E6%B4%8B%E5%BB%A2%E6%A3%84%E7%89%A9%E6%B2%BB%E7%90%86%E8%A1%8C%E5%8B%95%E6%96%B9%E6%A1%88(%E7%AC%AC%E4%BA%8C%E7%89%88).pdf">臺灣海洋廢棄物治理行動方案</a>
+        </li>
+
+        <li>11 | 14 | 15.　<a href="https://news.pts.org.tw/article/740574">垃圾危害台灣西海岸環境研究自中國浙江海漂來台 ｜ 公視新聞網 PNN</a>
+        </li>
+        <li>12.　<a
+            href="https://ppg.ly.gov.tw/ppg/SittingAttachment/download/2024041108/06242080514111100003.pdf">限塑政策執行成效及家戶與一般事業廢棄物減量之檢討與策進作為書面報告</a>
+        </li>
+        <li>13.　<a
+            href="https://www.greenpeace.org/taiwan/update/39421/%E5%9B%9E%E9%A1%A72023%E6%B8%9B%E5%A1%91%E5%B0%88%E6%A1%88%EF%BC%9A%E8%87%BA%E7%81%A3%E8%B8%8F%E5%85%A5%E5%BE%AA%E7%92%B0%E6%9D%AF%E5%85%83%E5%B9%B4/">回顧2023減塑專案：臺灣踏入循環杯元年，全球塑膠公約談判啟動-Greenpeace
+            綠色和平 | 臺灣</a>
+        </li>
+
+        <li>16.　<a href="https://www.kuroshio.org.tw/newsite/article02.php?info_id=1004">黑潮海洋文教基金會 Kuroshio Ocean
+            Education Foundation-海洋中潛伏的殺手——海洋廢棄物</a>
+        </li>
+      </ul>
+
+
+    </div>
+  </div>
+</section>
+<section id="japan">
+  <div class="container">
+    <div class="main-header">
+      <h2 class="display-4 mb-3">日本的海洋永續議題</h2>
+      <h4>SDGs目標14「海の豊かさを守ろう」</h4>
+      <p>
+        日本作為一個四面環海的島國，對於「海洋永續」（海洋の持続可能性）議題非常重視。面對日益嚴重的海洋污染、生物多樣性喪失、過度捕撈等挑戰，日本政府、民間與學術機構採取了多方面的行動。
+      </p>
+    </div>
+
+    <div class="row" style="border: 2px solid black; border-radius: 10px; background:  #ade1ff;">
+
+      <div class=" col-md-8 col-sm-12 align-self-center">
+        <div class="main-text">
+          <h3>日本目前永續發展目標14 :<br>「保護與永續利用海洋」的現況</h3>
+          <p style="color: #000000;">
+            日本四面環海，嚴重依賴海洋資源，但目前實現永續發展目標14的情況並不樂觀。
+            作為世界上產生海洋塑膠垃圾最多的國家之一，日本漁業過度捕撈導致海洋資源減少，曾經豐富的漁場難以恢復。沿海填海造地、氣候變遷導致海平面上升等因素，導致海洋環境逐年惡化。對此，日本政府也正在依據法律和協議採取措施解決這些問題。
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 d-flex ">
+        <img src="{% static 'img/sdgs.jpg' %}" alt="SDGs目標14圖示" class="img-fluid rounded" style=" max-width: 300px;" />
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12 ">
+        <div class="main-text">
+          <h3>日本目前「海洋」的現況</h3>
+          <ul>
+            <li><strong>因海洋垃圾造成的污染</strong>：塑膠垃圾佔大半，每年約800萬噸進入海洋，預測到2050年海中塑膠垃圾重量可能超越魚類。</li>
+            <li><strong>化學物質的流出</strong>：工業廢水可能含有汞、鎘等有害化學物質，對生物造成負面影響，如「痛痛病」。</li>
+            <li><strong>海洋酸化</strong>：全球暖化導致海洋酸化，減少鈣離子，影響生物殼體形成。</li>
+            <li><strong>魚類減少</strong>：人口增加及多樣化飲食導致捕撈量超過魚類再生速度，資源逐漸枯竭。</li>
+          </ul>
+          <hr />
+          <h3>日本永續發展目標14的具體目標</h3>
+          <p>
+            日本依據《我々の世界を変革する：持続可能な開発のための2030アジェンダ》，將SDGs目標14細分為10個具體目標。<br>
+          </p>
+          <table class="table table-bordered" style=" border: 2px solid #808080 !important;">
+            <thead>
+              <tr>
+                <th>編號</th>
+                <th>目標內容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>14.1</td>
+                <td>2025年，防止並大幅減少各種海洋污染，特別是陸上活動造成的污染，包括海洋沉積和富營養化。</td>
+              </tr>
+              <tr>
+                <td>14.2</td>
+                <td>到2020年，可持續管理和保護海洋和沿海生態系統，避免重大不利影響，包括增強其復原力，並採取措施恢復它們，以實現健康和富有成效的海洋。</td>
+              </tr>
+              <tr>
+                <td>14.3</td>
+                <td>盡量減少和應對海洋酸化的影響，包括透過加強各級科學合作。</td>
+              </tr>
+              <tr>
+                <td>14.4</td>
+                <td>
+                  到2020年，有效規範捕撈活動，終止過度捕撈、非法、未報告和無管制捕撈以及破壞性捕撈做法，實施基於科學的管理計劃，以在盡可能短的時間內恢復魚類資源，至少恢復到根據各魚類種群生物學特性確定的能夠產生最大可持續產量的水平。
+                </td>
+              </tr>
+              <tr>
+                <td>14.5</td>
+                <td>到2020年，根據國家和國際法並基於現有的最佳科學信息，保護至少10%的沿海和海洋區域。</td>
+              </tr>
+              <tr>
+                <td>14.6</td>
+                <td>
+                  到2020年，禁止導致產能過剩和過度捕撈的漁業補貼，取消導致非法、未報告和無管制捕撈的補貼，並避免引入新的此類補貼，同時認識到對發展中國家和最不發達國家適當、有效的特殊和差別待遇應成為世界貿易組織（WTO）漁業補貼談判的組成部分。
+                </td>
+              </tr>
+              <tr>
+                <td>14.7</td>
+                <td>到2030年，增加小島嶼發展中國家和最不發達國家透過永續利用海洋資源，包括透過永續管理漁業、水產養殖業和旅遊業所獲得的經濟利益。</td>
+              </tr>
+              <tr>
+                <td>14.a</td>
+                <td>
+                  增加科學知識，發展研究能力，轉移海洋技術，同時考慮到教科文組織政府間海洋學委員會關於轉移海洋技術的標準和指導方針，以改善海洋健康和海洋生物多樣性對發展中國家，特別是小島嶼發展中國家和最不發達國家發展的貢獻。
+                </td>
+              </tr>
+              <tr>
+                <td>14.b</td>
+                <td>為小規模漁民和沿海漁民提供取得海洋資源和市場的機會。</td>
+              </tr>
+              <tr>
+                <td>14.c</td>
+                <td>透過實施國際法，加強對海洋及其資源的保護和永續利用，如《聯合國海洋法公約》（UNCLOS）所體現的國際法，公約為保護和永續利用海洋及其資源提供了法律框架。</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 align-self-center">
+        <div class="main-text">
+          <h3>日本為了海洋永續做了什麼</h3>
+          <ul>
+            <li><b>2007年制定《海洋基本法》</b><br>
+              這是一部綜合性的法律，強調海洋資源的可持續利用、海洋環境保護、海洋科學發展等。它也是日本海洋政策的基礎。
+            </li>
+            <li><b>2022年施行《塑膠資源循環促進法》</b><br>
+              為了減少海洋塑膡污染，日本強化塑膡製品的減量、再利用與回收，並要求企業對一次性塑膡使用負責。
+            </li>
+            <li><b>國家海洋基本計畫</b><br>
+              每五年更新一次，統合海洋保護、經濟利用（如離岸風電）、國際合作等內容。
+            </li>
+            <li><b>減少浪費</b><br>
+              積極跟民眾宣導，最重要的是減少浪費的數量。首先，透過拍攝你丟出的垃圾袋的照片或稱重來了解你在日常生活中產生了多少垃圾。一旦知道了浪費的數量，就可以想想是否有可以減少的浪費。
+            </li>
+            <li><b>垃圾收集</b><br>
+              宣導如果垃圾不丟進垃圾桶，就會被雨水和風衝進河流，最後流入海洋的觀念。因此，不僅要不亂丟垃圾，要把垃圾丟進垃圾桶，還要撿起在街上、公園或城市任何其他地方發現的任何垃圾，並將其丟進垃圾桶。
+            </li>
+            <li><b>再利用收集的海洋垃圾</b><br>
+              根據環境省《一般廢棄物排放及處理現況（2020年）》顯示，送往掩埋場的一般廢棄物數量正在減少，但可用於掩埋的土地面積也在減少，確保土地十分困難。因此未來，與其簡單地處理海洋垃圾，不如嘗試透過海洋垃圾藝術等方式，提升海洋垃圾的價值。
+            </li>
+          </ul>
+          <hr />
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-sm-12 align-self-center">
+        <div class="main-text">
+          <h3>企業案例</h3>
+          <ul>
+            <li><strong>鈴木汽車公司</strong><br>日本運輸設備製造商鈴木於2020年開發出一種可安裝在舷外發動機上的微塑膠收集裝置。
+              該收集裝置不會影響舷外機的引擎性能，並且環保，作為只需運行船舶即可收集微塑料的突破性產品而受到關注。
+            </li>
+            <li><strong>Techno Lab</strong><br>日本塑膠製造商 Technolab 創立的品牌，利用廢棄塑膠製作傳統工藝品。這項舉措引起了人們的關注，因為它為收集的海洋垃圾增加了更大的價值。
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 order-first order-lg-last">
+        <img src="{% static 'img/jp_poster.png' %}" alt="日本海洋保護海報" class="img-fluid"
+          style="border: 2px solid black; box-shadow: 3px 3px 5px rgba(0,0,0,0.3);" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ai">
+  <div class="container">
+    <div class="main-header">
+      <h2 class="display-4 mb-3">海洋保護小講堂</h2>
+      <h4>能夠簡單詢問SDGs14相關問題的AI聊天室</h4>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mb-3">
+        <div class="card h-100">
+          <div class="card-header">
+            <h4>輸入您的問題</h4>
+          </div>
+          <div class="card-body">
+            <div class="mb-3">
+              <textarea class="form-control" id="textarea_content" name="textarea_text" rows="6"
+                placeholder="請輸入您想問的問題..."></textarea>
+            </div>
+            <button type="button" class="btn btn-primary w-100" id="btn_send" disabled><i class="bi bi-send"></i>
+              發送</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 mb-3">
+        <div class="card h-100">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <h4 class="mb-0">對話內容</h4>
+            <div>
+              <button class="btn btn-success btn-sm" id="btn_aiConnect"><i class="bi bi-trash"></i> 嘗試連線AI</button>
+              <button class="btn btn-outline-secondary btn-sm" id="btn_clearMemory"><i class="bi bi-trash"></i>
+                清除對話</button>
+            </div>
+
+          </div>
+          <div class="card-body">
+            <div id="chat_container" class="overflow-y-auto"
+              style="height: 50vh; max-height: 500px; position: relative; overflow-x: hidden;">
+              <div class="text-center text-muted my-5">
+                <p>👋 歡迎使用 AI 海洋保護小講堂！</p>
+                <p>請先點選上方「嘗試連線AI」按鈕，成功連線後便可聊天</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="art" style="background: linear-gradient(to bottom, #ebedef 5%,#adcceb 40%, #adcceb 96%,#494949 100%);">
+  <div class="container">
+    <div class="main-header">
+      <h2 class="display-4 mb-3"><small>SDGs14</small> 美術展覽</h2>
+      <p>本系列作品以聯合國永續發展目標（SDGs 14）為核心靈感，延伸探討
+        <b style="color: #78848f;">「海洋廢棄物污染」</b>與<b style="color: #78848f;">「過度捕撈」</b>對海洋生物的實質威脅。<br>
+        作品使用塑膠袋(使用過的)與廢紙等生活垃圾作為主要媒材，讓這些原本會對環境造成傷害的物質，轉化為敘事的媒介。<br>畫面類似於兒童插畫風格，傳遞出牠們身處危機的無聲吶喊。<br>
+
+      </p>
+      <p><b style="color: #78848f;">我們希望透過這樣的視覺拼貼，讓觀者不只是「看見」問題，更能「感受」牠們的無助與痛苦。</b></p>
+    </div>
+
+    <div class="row" style="margin-bottom: 30px; ">
+      <div class="col-md-6 col-sm-12 text-align: center">
+        <img src="{% static 'img/collage_seaTurtle.jpg' %}" alt=""
+          style="width: 80%; height: auto; border: 5px solid; border-image: linear-gradient(to bottom, #d1d1d1, #a0a0a0) 1; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.5);">
+      </div>
+      <div class="col-md-6 col-sm-12 align-self-center">
+        <div class="main-text">
+          <h3>《擱淺的海龜》</h3>
+          <p>畫面描繪一隻獨自擱淺在沙灘上的小海龜，牠無聲地流淚，眼神透露出迷惘與疲憊。</p>
+          <p>這幅作品並未加入其他動物或人類干預，刻意突顯小海龜的孤單。在這樣的場景裡，牠成了人為破壞與環境變遷下的無聲受害者。拼貼素材選擇海洋色系與紙板質感，讓整體看似簡單童趣，卻隱含深層警示。</p>
+          <hr>
+          <span class="pull-left">反映 SDGs 議題: 海洋污染、塑膡垃圾問題</span>
+          <a href="javascript:;" class="cta">Read More <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row" style="margin-bottom: 30px;">
+      <div class="col-md-8 col-sm-12  align-self-center">
+        <div class="main-text text-right">
+          <h3>《網中的鯊魚》</h3>
+          <p>這件作品以一隻驚恐的鯊魚為主角，牠被困在如蜘蛛網般的漁網裡，掙扎卻難以脫身。「!?」、「NO!」的語句強調牠內心的驚慌與呼救。</p>
+
+          <p>漁網不再只是捕魚工具，而是成為致命的陷阱，也暗喻人類對自然的無止境索取。<br>
+            整體畫面以冷色調為主，突顯深海中被壓迫的氛圍。</p>
+          <hr>
+          <span class="pull-left">反映 SDGs 議題: 過度捕撈、生物棲地受威脅</span>
+          <a href="javascript:;" class="cta">Read More <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 order-first order-lg-last">
+        <img src="{% static 'img/collage_shark.jpg' %}" alt=""
+          style="width: 100%; height: auto; border: 5px solid; border-image: linear-gradient(to bottom, #d1d1d1, #a0a0a0) 1; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.5);">
+      </div>
+    </div>
+    <hr>
+    <div class="row" style=" border: 2px dashed ; margin-bottom: 30px;">
+      <div class="main-text">
+        <h3>類海報專欄</h3>
+        <p style="color: #000000be;">
+          此系列作品聚焦於 SDGs 第14項「保育海洋與海洋資源」，透過這組海報反應海洋生物所面臨的生存危機。
+        </p>
+        <ul style="color: #000000be;">
+          <li>綠蠵龜:長年面對塑膡污染、棲地流失、非法捕撈等威脅，族群數量大幅減少。</li>
+          <li>中華白海豚:數量已不到百隻，主要受海洋工程與環境污染影響，是台灣近海最具象徵性的瀕危物種之一。</li>
+        </ul>
+        <p style="color: #000000be;">
+          作品主軸是「無聲的哀鳴」與「即將消失的生命」，借由沙粒般消散的身影與靜止的陰影，喚起人們對海洋生態危機的感知與反思。<br>
+          我們希望透過藝術表達：「當聲音無法傳遞、當身影無法回來，再去思考保育是否已為時已晚？」
+          邀請觀者重新審視人與自然的連結，<br>將「海洋保護」從概念轉為行動。
+        </p>
+        <hr>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-          excepturi numquam doloribus incidunt deserunt maiores eligendi officia
-          architecto, mollitia fugiat repellat autem velit aliquam, aliquid
-          magnam saepe at nesciunt ratione nisi sapiente. Aperiam vitae hic, qui
-          sed nobis. Reprehenderit, ex.
+          本系列作品以海洋中兩種瀕危生物——綠蠵龜與中華白海豚——作為視覺象徵，透過如沙粒般輪廓與靜止的影子，描繪牠們逐漸從我們世界中消失的痕跡。
+          <b style="color: #924040;">畫面風格以細膩砂畫結合極簡留白，讓觀者聚焦於「消逝」這個核心意象—彷彿一陣潮水過後，生命的痕跡僅餘殘影與沉默。</b>
+
+        </p>
+        <p>
+          搭配的日文詞句不僅增添作品的詩意與距離感，也強化了「過去與消逝」的氛圍。觀者在閱讀的同時，也被引導進入一段對自然與自身責任的靜默凝視。
         </p>
       </div>
 
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <img src="{% static 'img/place-one.jpg' %}" alt="" />
-        </div>
-        <div class="col-md-6 col-sm-12 align-self-center">
-          <div class="main-text">
-            <h3>Beach</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Asperiores quasi tempora doloremque reprehenderit nihil
-              dignissimos eaque repellendus quidem non vero quo inventore illum
-              beatae rerum in quibusdam, numquam culpa quisquam eius laboriosam,
-              adipisci ex modi expedita.
-            </p>
+    </div>
 
-            <p>
-              Libero non rerum quasi enim explicabo, obcaecati eum aspernatur
-              cupiditate quam, nobis placeat, rem.
-            </p>
-            <hr />
-            <span class="pull-left">July 02, 2018</span>
-            <a href="javascript:;" class="cta"
-              >Read More
-              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
-            ></a>
-          </div>
-        </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <img src="{% static 'img/poster_2.jpg' %}" alt="" style="width: 80%; height: auto; border: 5px solid transparent; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+          background: url( /static/img/wood_texture.jpg ) center/cover;">
       </div>
+      <div class="col-md-6 col-sm-12  align-self-center">
+        <div class="main-text">
+          <h3>《微影停在退潮時》</h3>
+          <p>綠蠵龜那靜止的姿態，映照著那些再也無法歸返的海洋生命。</p>
+          <hr>
 
-      <!--/one -->
+          <a href="javascript:;" class="cta">Read More <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
 
-      <div class="row">
-        <div class="col-md-6 col-sm-12 align-self-center">
-          <div class="main-text text-right">
-            <h3>Forest</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Reiciendis quo maiores et non nihil nam, commodi nulla odit eum
-              necessitatibus beatae nemo, aliquid sunt ab ducimus.
-            </p>
-
-            <p>
-              Facilis nam laboriosam eius quo modi, reprehenderit consequuntur
-              facere doloribus cum sed ducimus veniam, non ut consequatur
-              deserunt, ullam obcaecati! Dolor ex accusamus suscipit dolorem
-              animi nobis. Sapiente blanditiis, molestiae ratione ducimus earum
-              maxime!
-            </p>
-            <hr />
-            <span class="pull-left">July 22, 2018</span>
-            <a href="javascript:;" class="cta"
-              >Read More
-              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
-            ></a>
-          </div>
         </div>
-        <div class="col-md-6 col-sm-12 order-first order-lg-last">
-          <img src="{% static 'img/place-two.jpg' %}" alt="" />
-        </div>
-      </div>
-      <!--/two -->
-
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <img src="{% static 'img/place-three.jpg' %}" alt="" />
-        </div>
-        <div class="col-md-6 col-sm-12 align-self-center">
-          <div class="main-text">
-            <h3>Road Trip</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Asperiores quasi tempora doloremque reprehenderit nihil
-              dignissimos eaque repellendus quidem non vero quo inventore illum
-              beatae rerum in quibusdam, numquam culpa quisquam eius laboriosam,
-              adipisci ex modi expedita.
-            </p>
-
-            <p>
-              Libero non rerum quasi enim explicabo, obcaecati eum aspernatur
-              cupiditate quam, nobis placeat, rem.
-            </p>
-            <hr />
-            <span class="pull-left">July 02, 2018</span>
-            <a href="javascript:;" class="cta"
-              >Read More
-              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-      <!--/three -->
-
-      <div class="row">
-        <div class="col-md-6 col-sm-12 align-self-center">
-          <div class="main-text text-right">
-            <h3>Faraway</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Reiciendis quo maiores et non nihil nam, commodi nulla odit eum
-              necessitatibus beatae nemo, aliquid sunt ab ducimus. Facilis nam
-              laboriosam eius quo modi, reprehenderit consequuntur facere
-              doloribus cum sed ducimus veniam, non ut consequatur deserunt,
-              ullam obcaecati!
-            </p>
-            <p>
-              Dolor ex accusamus suscipit dolorem animi nobis. Sapiente
-              blanditiis, molestiae ratione ducimus earum maxime!
-            </p>
-            <hr />
-            <span class="pull-left">July 22, 2018</span>
-            <a href="javascript:;" class="cta"
-              >Read More
-              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
-            ></a>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-12 order-first order-lg-last">
-          <img src="{% static 'img/place-four.jpg' %}" alt="" />
-        </div>
-        <!--/four -->
       </div>
     </div>
-  </section>
 
-  <!-- end of main section -->
-  <!-- gallery -->
-  <section id="gallery">
-    <div class="container">
-      <div class="row">
-        <div class="main-header">
-          <h2 class="display-4 mb-3">Amazing Collections</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-            excepturi numquam doloribus incidunt deserunt maiores eligendi
-            officia architecto, mollitia fugiat repellat autem velit aliquam,
-            aliquid magnam saepe at nesciunt ratione nisi sapiente. Aperiam
-            vitae hic, qui sed nobis. Reprehenderit, ex.
-          </p>
-        </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12  align-self-center">
+        <div class="main-text text-right">
+          <h3>《餘聲落入靜海中》</h3>
+          <p>中華白海豚的身影呈現出一種靜默的呼喊。<br>象徵著牠們逐漸被忽視的存在與被奪走的棲息地。</p>
+          <hr>
 
-        <div class="col-xs-12 col-sm-4">
-          <div class="card">
-            <a class="img-card" href="javascript:;">
-              <img src="{% static 'img/gallery-02.jpg' %}" />
-            </a>
-            <div class="card-content">
-              <h4 class="card-title">
-                <a href="javascript:;"> Monsoon </a>
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla,
-                assumenda.
-              </p>
-            </div>
-            <div class="card-read-more">
-              <a href="javascript:;" class="btn btn-block"> Read More </a>
-            </div>
+          <a href="javascript:;" class="cta">Read More <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 order-first order-lg-last">
+        <img src="{% static 'img/poster_1.jpg' %}" alt="" style="width: 80%; height: auto; border: 5px solid transparent; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+                  background: url( /static/img/wood_texture.jpg ) center/cover;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="position: relative; overflow: hidden; ">
+  <!-- background: linear-gradient(to bottom, #6cb2eb, rgb(33, 47, 60)); -->
+  <!-- 背景影片 -->
+  <video autoplay loop muted playsinline
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+    <source src="{% static 'media/underwater.mp4' %}" type="video/mp4">
+    您的瀏覽器不支援影片播放。
+  </video>
+  <div class="container">
+    <div class="row">
+      <div class="main-header">
+        <h2 class="display-4 mb-3 " style="color: #2b2b2b;"><b>文創小物</b></h2>
+        <p style="color: #2b2b2b;"><b>
+            本系列視覺以「OCEAN x PROTECT」為核心概念。以白海豚與儒艮的剪影結合流動線條及藍綠漸層。
+            象徵海洋生命的律動與永續未來的希望。線條如同海流與時間的軌跡，傳遞對海洋環境守護願景。</b>
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <div class="card">
+          <a class="img-card" href="javascript:;">
+            <img src="{% static 'img/item_badge.png' %}" />
+          </a>
+          <div class="card-content">
+            <h4 class="card-title">
+              <a href="javascript:;"> Logo徽章 </a>
+            </h4>
+            <p>
+              $ 10元
+            </p>
+          </div>
+          <div class="card-read-more">
+            <a href="javascript:;" style="pointer-events: none;" class=" btn btn-block"> 已售罄 </a>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="card">
-            <a class="img-card" href="javascript:;">
-              <img src="{% static 'img/gallery-06.jpg' %}" />
-            </a>
-            <div class="card-content">
-              <h4 class="card-title">
-                <a href="javascript:;"> Spring </a>
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Corporis, mollitia?
-              </p>
-            </div>
-            <div class="card-read-more">
-              <a href="javascript:;" class="btn btn-block"> Read More </a>
-            </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card">
+          <a class="img-card" href="javascript:;">
+            <img src="{% static 'img/item_bag1.png' %}" />
+          </a>
+          <div class="card-content">
+            <h4 class="card-title">
+              <a href="javascript:;"> 帆布袋A款</a>
+            </h4>
+            <p>
+              $ 10元
+            </p>
+          </div>
+          <div class="card-read-more">
+            <a href="javascript:;" style="pointer-events: none;" class=" btn btn-block"> 已售罄 </a>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="card">
-            <a class="img-card" href="javascript:;">
-              <img src="{% static 'img/gallery-03.jpg' %}" />
-            </a>
-            <div class="card-content">
-              <h4 class="card-title">
-                <a href="javascript:;">Summer </a>
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
-                numquam.
-              </p>
-            </div>
-            <div class="card-read-more">
-              <a href="javascript:;" class="btn btn-block"> Read More </a>
-            </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card">
+          <a class="img-card" href="javascript:;">
+            <img src="{% static 'img/item_bag2.png' %}" />
+          </a>
+          <div class="card-content">
+            <h4 class="card-title">
+              <a href="javascript:;">帆布袋B款 </a>
+            </h4>
+            <p>
+              $ 10元
+            </p>
+          </div>
+          <div class="card-read-more">
+            <a href="javascript:;" style="pointer-events: none;" class=" btn btn-block"> 已售罄 </a>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="card">
-            <a class="img-card" href="javascript:;">
-              <img src="{% static 'img/gallery-01.jpg' %}" />
-            </a>
-            <div class="card-content">
-              <h4 class="card-title">
-                <a href="javascript:;"> Autumn </a>
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla,
-                assumenda.
-              </p>
-            </div>
-            <div class="card-read-more">
-              <a href="javascript:;" class="btn btn-block"> Read More </a>
-            </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card">
+          <a class="img-card" href="javascript:;">
+            <img src="{% static 'img/item_hat.png' %}" />
+          </a>
+          <div class="card-content">
+            <h4 class="card-title">
+              <a href="javascript:;"> 遮陽帽 </a>
+            </h4>
+            <p>
+              $ 10元
+            </p>
+          </div>
+          <div class="card-read-more">
+            <a href="javascript:;" style="pointer-events: none;" class=" btn btn-block"> 已售罄 </a>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="card">
-            <a class="img-card" href="javascript:;">
-              <img src="{% static 'img/gallery-05.jpg' %}" />
-            </a>
-            <div class="card-content">
-              <h4 class="card-title">
-                <a href="javascript:;"> Winter </a>
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Corporis, mollitia?
-              </p>
-            </div>
-            <div class="card-read-more">
-              <a href="javascript:;" class="btn btn-block"> Read More </a>
-            </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card">
+          <a class="img-card" href="javascript:;">
+            <img src="{% static 'img/item_mag.png' %}" />
+          </a>
+          <div class="card-content">
+            <h4 class="card-title">
+              <a href="javascript:;"> Logo馬克杯 </a>
+            </h4>
+            <p>
+              $ 10元
+            </p>
+          </div>
+          <div class="card-read-more">
+            <a href="javascript:;" style="pointer-events: none;" class="btn btn-block"> 已售罄 </a>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="card">
-            <a class="img-card" href="javascript:;">
-              <img src="{% static 'img/gallery-04.jpg' %}" />
-            </a>
-            <div class="card-content">
-              <h4 class="card-title">
-                <a href="javascript:;">Unknown </a>
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
-                numquam.
-              </p>
-            </div>
-            <div class="card-read-more">
-              <a href="javascript:;" class="btn btn-block"> Read More </a>
-            </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card">
+          <a class="img-card" href="javascript:;">
+            <img src="{% static 'img/item_note.png' %}" />
+          </a>
+          <div class="card-content">
+            <h4 class="card-title">
+              <a href="javascript:;">筆記本 </a>
+            </h4>
+            <p>
+              $ 10元
+            </p>
+          </div>
+          <div class="card-read-more">
+            <a href="javascript:;" style="pointer-events: none;" class="btn btn-block"> 已售罄 </a>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- end of gallery -->
-
-  <!-- about Us -->
-  <section id="about">
-    <div class="container">
-      <div class="row text-center">
-        <div class="main-header">
-          <h2 class="display-4 mb-3">Our Trip Experts</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-            excepturi numquam doloribus incidunt deserunt maiores eligendi
-            officia architecto, mollitia fugiat repellat autem velit aliquam,
-            aliquid magnam saepe at nesciunt ratione nisi sapiente. Aperiam
-            vitae hic, qui sed nobis. Reprehenderit, ex.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <span>
-            <img src="{% static 'img/team_01.png' %}" class="rounded-circle" />
-          </span>
-          <h4 class="service-heading">Chief Trip Planner</h4>
-          <p class="text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-            maxime quam architecto quo inventore harum ex magni, dicta impedit.
-          </p>
-          <div class="icon social fb"><i class="fa fa-facebook"></i></div>
-          <div class="icon social tw"><i class="fa fa-twitter"></i></div>
-          <div class="icon social in"><i class="fa fa-linkedin"></i></div>
-        </div>
-        <div class="col-md-4">
-          <span>
-            <img src="{% static 'img/team_02.jpg' %}" class="rounded-circle" />
-          </span>
-          <h4 class="service-heading">Chief Trip Adviser</h4>
-          <p class="text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-            maxime quam architecto quo inventore harum ex magni, dicta impedit.
-          </p>
-          <div class="icon social fb"><i class="fa fa-facebook"></i></div>
-          <div class="icon social tw"><i class="fa fa-twitter"></i></div>
-          <div class="icon social in"><i class="fa fa-linkedin"></i></div>
-        </div>
-        <div class="col-md-4">
-          <span>
-            <img src="{% static 'img/team_03.jpg' %}" class="rounded-circle" />
-          </span>
-          <h4 class="service-heading">Chief Trip Co-ordinator</h4>
-          <p class="text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-            maxime quam architecto quo inventore harum ex magni, dicta impedit.
-          </p>
-          <div class="icon social fb"><i class="fa fa-facebook"></i></div>
-          <div class="icon social tw"><i class="fa fa-twitter"></i></div>
-          <div class="icon social in"><i class="fa fa-linkedin"></i></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end of about Us -->
-
-  <!-- contact Us -->
-  <section id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="main-header">
-          <h2 class="display-4 mb-3">Contact Us Today</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-            excepturi numquam doloribus incidunt deserunt maiores eligendi
-            officia architecto.
-          </p>
-        </div>
-
-        <div class="col-md-6 col-sm-12">
-          <form method="post" data-form-title="Contact Us">
-            <input type="hidden" data-form-email="true" />
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control"
-                name="name"
-                required=""
-                placeholder="Name*"
-                data-form-field="Name"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control"
-                name="email"
-                required=""
-                placeholder="Email*"
-                data-form-field="Email"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="tel"
-                class="form-control"
-                name="phone"
-                placeholder="Phone"
-                data-form-field="Phone"
-              />
-            </div>
-            <div class="form-group">
-              <textarea
-                class="form-control"
-                name="message"
-                placeholder="Message"
-                rows="7"
-                data-form-field="Message"
-              ></textarea>
-            </div>
-            <div>
-              <button type="submit" class="btn btn-header mb-5">
-                Contact Us
-              </button>
-            </div>
-          </form>
-        </div>
-
-        <div class="col-md-6 col-sm-12">
-          <h4>Office Address - New York City</h4>
-          <p>123, Street Name, <br />City name, <br />Country - Zip Code</p>
-
-          <h4>Office Address - San Francisco</h4>
-          <p>123, Street Name, <br />City name, <br />Country - Zip Code</p>
-          <hr />
-          <h4>Talk To Us Today</h4>
-          <p>+01-123-456-7890<br />+01-789-456-7890</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End of contact Us -->
+  </div>
+</section>
 {% endblock %}

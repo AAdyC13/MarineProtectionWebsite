@@ -1,20 +1,3 @@
-/*--- Credits to GEC Designs --*/
-/*--------- Index -----------*/
-
-/*  1. base
-    2. Global Media query
-    3. Header section
-    4. Navbar
-    5. Main Section
-    6. Gallery Section
-    7. About Section
-    8. Contact Section
-    9. Footer Section
-    10. Social Icon
-    11. Footer End Section
-    12. Go to Top
-*/
-
 /*--------------------------------------------------------------
 * Base Css
 ----------------------------------------------------------------*/
@@ -220,9 +203,8 @@ nav {
     }
 }
 
-/*-- main section */
-
-#main {
+#japan {
+    background: rgb(235, 237, 239);
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
@@ -232,28 +214,63 @@ nav {
     padding: 2rem 4rem;
 }
 
-#main .col-md-6 {
+#japan .col-md-6 {
     padding: 0;
 }
 
-#main h3 {
+#japan h3 {
     margin-bottom: 1rem;
 }
 
-#main h3,
+#japan h3,
 span,
 .cta {
     color: #262626;
 }
 
-#main img {
+#japan img {
     width: 100%;
     height: auto;
     overflow: hidden;
 }
 
 @media(max-width:768px) {
-    #main img {
+    #japan img {
+        padding: 2rem;
+    }
+}
+#art {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.main-header {
+    text-align: center;
+    padding: 2rem 4rem;
+}
+
+#art .col-md-6 {
+    padding: 0;
+}
+
+#art h3 {
+    margin-bottom: 1rem;
+}
+
+#art h3,
+span,
+.cta {
+    color: #262626;
+}
+
+#art img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+@media(max-width:768px) {
+    #art img {
         padding: 2rem;
     }
 }
@@ -341,35 +358,60 @@ span,
     text-transform: uppercase
 }
 
-/*-- about section --*/
 
-#about {
+#analyze {
     height: auto;
     width: 100%;
     padding: 6rem 0rem;
-    background: rgb(235, 237, 239);
+    background: rgb(255, 255, 255);
 }
 
-#about span {
+#analyze span {
     overflow: hidden;
     border-radius: 50%;
     margin-bottom: 2rem;
 }
 
-#about .icon {
+#analyze .icon {
     padding: 16px;
 }
 
-#about .icon i {
+#analyze .icon i {
     font-size: 14px;
     left: 10px;
     top: 9px;
 }
 
-#about .icon.social {
+#analyze .icon.social {
     display: inline-block;
 }
 
+#ai {
+    height: auto;
+    width: 100%;
+    padding: 6rem 0rem;
+    background: rgb(255, 255, 255);
+}
+
+#ai span {
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+#ai .icon {
+    padding: 16px;
+}
+
+#ai .icon i {
+    font-size: 14px;
+    left: 10px;
+    top: 9px;
+}
+
+#ai .icon.social {
+    display: inline-block;
+}
 .service-heading {
     color: #262626;
     padding: 1rem 0;
@@ -379,6 +421,7 @@ span,
 /*-- contact section --*/
 
 #contact {
+    background: #001c43;
     height: auto;
     width: 100%;
     padding: 6rem 0rem;
