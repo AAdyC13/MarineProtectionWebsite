@@ -57,7 +57,7 @@ def ai_talk(request):
         if not token_valid:
             return JsonResponse({"status": "error", "message": "Invalid or expired token."}, status=403)
 
-        if client[client_idx]["times"] >= 1:
+        if client[client_idx]["times"] >= 10:
             client.pop(client_idx)
             return JsonResponse({"status": "error", "message": "You have reached the maximum number of requests. AUTO_RETRY"}, status=429)
 
